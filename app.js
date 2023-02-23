@@ -1,8 +1,9 @@
+const exercises = require("./routes/exercises.routes");
+
 const express = require("express");
 const morgan = require("morgan");
 const app = express();
 
-const exercises = require("./routes/routes.exercises");
 
 app.use(morgan("dev"));
 app.use(express.json());
